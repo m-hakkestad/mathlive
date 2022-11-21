@@ -1558,7 +1558,7 @@ export class MathfieldElement extends HTMLElement implements Mathfield {
    * @category Selection
    *
    */
-  get selection(): Selection {
+  get selection(): Selection | Offset{
     if (this._mathfield) {
       return this._mathfield.selection;
     }
